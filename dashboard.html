@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+      }
+
+      header {
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+      }
+
+      nav {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+      }
+
+      nav a {
+          color: #fff;
+          text-decoration: none;
+      }
+
+      main {
+          flex-grow: 1;
+          padding: 20px;
+      }
+
+      .dashboard {
+          text-align: center;
+          background-color: #fff;
+          padding: 40px;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .dashboard h2 {
+          font-size: 28px;
+          margin-bottom: 20px;
+      }
+
+      .dashboard p {
+          font-size: 18px;
+          margin-bottom: 20px;
+      }
+
+      .dashboard ul {
+          list-style: none;
+          padding: 0;
+          text-align: left;
+          
+      }
+
+      .dashboard ul li {
+          margin-bottom: 10px;
+      }
+
+      .dashboard ul li a {
+          display: block;
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+
+      .dashboard ul li a:hover {
+          background-color: #0056b3;
+      }
+
+      footer {
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+      }
+
+    </style>
+    <title>Bus Route Enquiry System - Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>College Bus Route Enquiry System</h1>
+        <nav>
+            <!-- Add navigation links to other pages -->
+            <a href="bus.html">Bus Information</a>
+            <a href="routes.html">Routes Information</a>
+            <a href="driver.html">Driver Information</a>
+            <a href="payment.html">Payment</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Welcome to the Dashboard of College Bus management System</h2>
+            <p>Explore different sections of the college bus management system:</p>
+            <ul>
+                <li><a href="bus.html">Bus Information</a></li>
+                <li><a href="routes.html">Routes Information</a></li>
+                <li><a href="driver.html">Driver Information</a></li>
+                <li><a href="payment.html">Make Payment</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 College Bus Route Enquiry System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
