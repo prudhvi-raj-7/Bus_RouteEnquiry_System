@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Enquiry System - Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment</h1>
+        <form id="paymentForm">
+            <label for="route">Select Route</label>
+            <select id="route" name="route" required>
+                <option value="">Select a Route</option>
+                <option value="routeA">Route A</option>
+                <option value="routeB">Route B</option>
+                <option value="routeC">Route C</option>
+            </select>
+            <label for="bus">Select Bus</label>
+            <select id="bus" name="bus" required>
+                <option value="">Select a Bus</option>
+                <option value="bus1">Bus 1</option>
+                <option value="bus2">Bus 2</option>
+                <option value="bus3">Bus 3</option>
+                <option value="bus4">Bus 4</option>
+                <option value="bus5">Bus 5</option>
+            </select>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            <label for="expiry">Expiry Date</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" name="cvv" required>
+            <button type="submit">Make Payment</button>
+        </form>
+    </div>
+
+    <script>
+        const paymentForm = document.getElementById('paymentForm');
+
+        paymentForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const route = document.getElementById('route').value;
+            const bus = document.getElementById('bus').value;
+            const cardNumber = document.getElementById('cardNumber').value;
+            const expiry = document.getElementById('expiry').value;
+            const cvv = document.getElementById('cvv').value;
+
+            // You can implement your payment processing logic here
+            // For example, you can simulate a successful payment by displaying an alert
+
+            // For demonstration purposes, let's assume a simple successful payment
+            alert(`Payment successful for Route: ${route}, Bus: ${bus}! Thank you for using our service.`);
+            // You can redirect to another page after successful payment if needed
+        });
+    </script>
+</body>
+</html>
